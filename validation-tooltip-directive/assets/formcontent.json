@@ -1,0 +1,11 @@
+{
+"controls": {
+    "firstName": "firstName",
+    "middleName": "middleName",
+    "lastName": "lastName",
+    "emailId": "emailId",
+    "mobile": "mobile",
+    "password": "password"
+  },
+  "btnName": "Register With Us"
+}

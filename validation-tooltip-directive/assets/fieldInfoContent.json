@@ -1,1 +1,10 @@
-
+{
+    "fieldInfo": {
+        "firstName" : "Firstname is a required field",
+        "middleName": "middleName is not a required field",
+        "lastName" : "Lastname is a required field",
+        "emailId": "Email is a required field",
+        "mobile" : "Mobile is a required field",
+        "password" : "Password is a required field"
+    }
+}
