@@ -1,1 +1,9 @@
-
+[{
+    "empid": 1,
+    "empname": "Luann Brannick",
+    "parentid": 0,
+    "empdesgid": 1,
+    "supervisorid": 0,
+    "empdesgname": "CEO"
+  }
+]

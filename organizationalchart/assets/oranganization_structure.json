@@ -1,0 +1,41 @@
+[{
+    "designation_name": "CEO",
+    "designation_id": 1,
+    "designation_parentid": 0
+  },
+  {
+    "designation_name": "Director",
+    "designation_id": 2,
+    "designation_parentid": 1
+  },
+  {
+    "designation_name": "Associate Director",
+    "designation_id": 3,
+    "designation_parentid": 2
+  },
+  {
+    "designation_name": "Senior Manager",
+    "designation_id": 4,
+    "designation_parentid": 3
+  },
+  {
+    "designation_name": "Manager",
+    "designation_id": 5,
+    "designation_parentid": 4
+  },
+  {
+    "designation_name": "Senior Associate",
+    "designation_id": 6,
+    "designation_parentid": 5
+  },
+  {
+    "designation_name": "Associate",
+    "designation_id": 7,
+    "designation_parentid": 6
+  },
+  {
+    "designation_name": "PAT",
+    "designation_id": 8,
+    "designation_parentid": 7
+  }
+]
