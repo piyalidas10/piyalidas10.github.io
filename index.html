@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piyali Das</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="Piyali Das">
+        <meta name="Description" content="Personal Website, Resume, Website">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+
+    <section class="home" id="homepage">
+        <div class="top">
+            <div class="menu">
+                <div class="sitemenu">
+                    <svg width="100%" height="100%" viewBox='0 0 250 90'  xmlns="http://www.w3.org/2000/svg" id="menuwrapper">
+                        <rect x="0" y="75" width="100%" height="15"></rect>
+                        <g id="home" onclick="gotoHome()">
+                            <rect x="22" y="38" width="5" height="10"></rect>
+                            <rect x="0" y="50" width="30" height="20"></rect>
+                            <polygon points="0 50 30 50 15 35 0 50"></polygon>
+                            <rect x="10" y="55" width="9" height="15"></rect>
+                            <rect x="10" y="25" width="3" height="5"></rect>
+                        </g>
+                        <g id="about" onclick="gotoAboutme()">
+                            <circle cx="60" cy="53" r="16"/>
+                            <circle cx="55" cy="50" r="4"/>
+                            <circle cx="65" cy="50" r="4"/>
+                            <ellipse cx="61" cy="59" rx="9" ry="2.5" />
+                        </g>
+                        <g id="career" onclick="gotoCareer()">
+                            <rect x="90" y="39" width="30" height="32"></rect>
+                            <rect x="90" y="61" width="9" height="10"></rect>
+                            <rect x="100" y="56" width="9" height="15"></rect>
+                            <rect x="110" y="51" width="9" height="20"></rect>
+                            <line x1="90" y1="56" x2="118" y2="42"></line>
+                            <line x1="114" y1="50" x2="118" y2="41"></line>
+                            <line x1="110" y1="40" x2="118" y2="42"></line>
+                        </g>
+                        <g id="portolio" onclick="gotoPortfolio()">
+                            <circle cx="147" cy="45" r="8"/>
+                            <rect x="134" y="47" width="26" height="24"></rect>
+                            <path d="M 136 56 C 136 59, 147 68, 158.5 57"></path>
+                            <rect x="144" y="57" width="6" height="9"></rect>
+                        </g>
+                        <g id="blog" onclick="gotoBlog()">
+                            <rect x="175" y="41" width="22" height="28"></rect>
+                            <rect x="181" y="48" width="10" height="1"></rect>
+                            <rect x="181" y="55" width="6" height="1"></rect>
+                            <rect x="181" y="62" width="3" height="1"></rect>
+                            <line x1="189" y1="63" x2="205" y2="46"></line>
+                        </g>
+                        <g id="contact" onclick="gotoContact()">
+                            <circle cx="232" cy="54" r="16"></circle>
+                            <path d="M 226 67 C 226 62, 240 65, 238.5 40"></path>
+                            <ellipse cx="223" cy="62" rx="5" ry="6"></ellipse>
+                            <ellipse cx="236" cy="43" rx="5" ry="6"></ellipse>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="cloudwrapper" id="cloudwrapper">
+                <div class="cloud" id="cloud">
+                    <svg width="100%" height="100%" viewBox='0 0 105 105'  xmlns="http://www.w3.org/2000/svg">
+                            <path d='M 25,25 
+                                 a 20,20 1 0,0 0,40 
+                                 h 50 
+                                 a 20,20 1 0,0 0,-40 
+                                 a 10,10 1 0,0 -15,-10 
+                                 a 15,15 1 0,0 -35,10  
+                                 z' />
+                      </svg>
+                </div>
+            </div>
+            <div class="sunwrapper" id="sunwrapper">
+                    <svg x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                    <circle id="sunBeam" cx="25" cy="25" r="20">
+                        <animate attributeName="opacity" from="1" to="0" dur="3s" repeatCount="indefinite" />
+                        <animate attributeName="r" attributeType="XML" from="12"  to="20" begin="0s" dur="3s" fill="remove" repeatCount="indefinite"/>
+                    </circle>    
+                    <circle cx="25" cy="25" r="13" class="sun"/>
+                  </svg>
+                  <div class="sunrays" id="sunrays">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="-100 -100 200 200" style="enable-background:new -100 -100 200 200;">
+                            <g>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                                <polygon points="10,0 30,0 20,100"/>
+                            </g>
+                          </svg>
+                  </div>
+            </div>
+        </div>
+        <div class="middle" id="middle">
+            <div class="personinfo" id="personinfo">
+                <svg height="100%" width="100%" viewBox="0 0 250 120">
+                    <g>
+                        <text x="0" y="50" dominant-baseline="left" text-anchor="left" id="name" font-family="Arial, Helvetica, sans-serif">Piyali Das</text>
+                        <text x="0" y="90" dominant-baseline="left" text-anchor="left" id="designation" font-family="Arial, Helvetica, sans-serif">UI Developer</text>
+                    </g>
+                </svg>
+            </div>
+            <div class="ballon" id="ballon">
+                <svg height="100%" width="100%" viewBox="0 0 300 350">
+                    <g>
+                        <circle cx="125" cy="40" r="30"></circle>
+                        <circle cx="135" cy="45" r="30"></circle>
+                        <ellipse cx="120" cy="55" rx="30" ry="35"></ellipse>
+                    </g>
+                    <g>
+                        <rect x="105" y="100" width="30" height="15"></rect>
+                        <line x1="120" y1="110" x2="150" y2="150"></line>
+                        <line x1="118" y1="110" x2="90" y2="150"></line>
+                    </g>
+                    <g>
+                        <rect x="50" y="130" rx="15" ry="15" width="150" height="30"></rect>
+                        <text x="120" y="145" dominant-baseline="middle" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Angular</text>
+                    </g>
+                    <g>
+                        <rect x="50" y="170" rx="15" ry="15" width="150" height="30"></rect>
+                        <text x="120" y="185" dominant-baseline="middle" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">HTML5</text>
+                    </g>
+                    <g>
+                        <rect x="50" y="210" rx="15" ry="15" width="150" height="30"></rect>
+                        <text x="120" y="225" dominant-baseline="middle" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">CSS3</text>
+                    </g>
+                    <g>
+                        <rect x="50" y="250" rx="15" ry="15" width="150" height="30"></rect>
+                        <text x="120" y="265" dominant-baseline="middle" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">Javascript</text>
+                    </g>
+                    <g>
+                        <rect x="50" y="290" rx="15" ry="15" width="150" height="30"></rect>
+                        <text x="120" y="305" dominant-baseline="middle" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">RWD</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="field" id="field">
+                <svg height="100%" width="100%" viewBox="0 0 200 120">
+                    <ellipse cx="100" cy="60" rx="100" ry="50"></ellipse>
+                </svg>
+            </div>
+            <div class="tree" id="tree">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <polygon points="53.33 63.5 88.05 63.5 59.69 24.58 32.33 63.5"></polygon>
+                    <polygon points="55.12 53.54 86.25 53.54 59.69 18.64 35.12 53.54"></polygon>
+                    <polygon points="58.12 42.57 83.26 42.57 59.69 17.44 38.12 42.57"></polygon>
+                    <rect x="58" y="63.5" width="4.56" height="25"></rect>
+                </svg>
+            </div>
+            <div class="waves" id="waves">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 686.35 165.84">
+                    <g>
+                        <path d="M649.1,399H-37.13V363S44.49,340.7,70.95,339.19c48-2.75,144.34,20.46,192.41,21.41,64.72,1.28,144.2-14.13,191.17-14.91C505.81,344.83,649.1,354,649.1,354v45Z" transform="translate(37.13 -338.96)" fill="#2c94fb"></path>
+                        </g>
+                        <g>
+                        <path d="M649.21,405.25l-686.23-3v-33S39,347.54,65.71,346c48.46-2.75,145.79,20.46,194.35,21.41,65.37,1.28,145.65-14.13,193.09-14.91,51.79-.86,196.06,7.72,196.06,7.72v45Z" transform="translate(37.13 -338.96)" fill="#107ae2"></path>
+                        </g>
+                        <g>
+                        <path d="M649.1,405H-37.13V378S38.4,354.2,65.13,352.69c48.49-2.75,145.86,20.46,194.44,21.41C325,375.38,405.29,360,452.75,359.19,504.57,358.33,649.1,369,649.1,369v36Z" transform="translate(37.13 -338.96)" fill="#096dd0"></path>
+                        </g>
+                        <g>
+                        <path d="M649.1,405l-686.23-1.45v-20.1s76-21.71,102.73-23.22c48.46-2.75,145.79,20.46,194.34,21.41,65.37,1.28,145.64-14.13,193.09-14.91C504.81,365.83,649.1,378,649.1,378v27Z" transform="translate(37.13 -338.96)" fill="#065aad"></path>
+                        </g>
+                </svg>    
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutme" id="aboutmepage">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="mypic"></div>
+            <div class="myintro">
+                <h4>My Specialities :</h4>
+                <ul>
+                <li>Developing Reusable components in angular for them who don't want to use third part libraries in Angular</li>
+                <li>Experience in Developing HTML (4/5), CSS (2/3), JavaScript, TypeScript, Angular (5/6), NPM, jQuery, AJAX, Bootstrap, JSON, SASS, Highcharts.</li>
+                <li>Angular 6 developer with 2 yrs + ( es6 + typescript )</li>
+                <li>Specialist in CSS3/ RWD/ Media Queries/ Bootstrap</li>
+                <li>Have basic knowledge in Jenkins</li>
+                <li>Having experience working under Agile methodologies environment (scrum)</li>
+                <li>Experience in using Chrome Developer Tools and Firebug for debugging and troubleshooting the code</li>
+                <li>Hands on experience in Photoshop with UI design for Website layout/ Native Mobile APP</li>
+                </ul> 
+            </div>
+        </div>
+    </section>
+
+    <section class="career" id="careerpage">
+        <div class="container">
+            <h1>My Career</h1>
+            <div class="career-container">
+                <div class="career-image">
+                    <svg width="100%" height="100%" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+                        <g id="person">
+                            <circle cx="467" cy="12" r="10"></circle>
+                            <rect x="456" y="22" width="22" height="33"></rect>
+                            <rect x="460" y="54" width="5" height="16"></rect>
+                            <rect x="469" y="54" width="5" height="16"></rect>
+                            <line x1="469" y1="40" x2="490" y2="30"></line>
+                            <line x1="488.5" y1="31" x2="484" y2="12"></line>
+                            <line x1="478" y1="13" x2="512" y2="11"></line>
+                            <circle cx="512" cy="11" r="5"></circle>
+                        </g>
+                        <g>
+                            <rect x="80%" y="70" width="20%" height="32"></rect>
+                            <text x="83%" y="90" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Accenture</text>
+                        </g>
+                        <g>
+                            <rect x="70%" y="110" width="30%" height="32"></rect>
+                            <text x="73%" y="130" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Cognizant</text>
+                        </g>
+                        <g>
+                            <rect x="60%" y="150" width="40%" height="32"></rect>
+                            <text x="63%" y="170" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Praxis</text>
+                        </g>
+                        <g>
+                            <rect x="50%" y="190" width="50%" height="32"></rect>
+                            <text x="53%" y="210" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">ASRMAC</text>
+                        </g>
+                        <g>
+                            <rect x="40%" y="230" width="60%" height="32"></rect>
+                            <text x="43%" y="250" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">NIC</text>
+                        </g>
+                        <g>
+                            <rect x="30%" y="270" width="70%" height="32"></rect>
+                            <text x="33%" y="290" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Clematis</text>
+                        </g>
+                        <g>
+                            <rect x="20%" y="310" width="80%" height="32"></rect>
+                            <text x="23%" y="330" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Zeon Group</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="technology-tree">
+                    <svg width="100%" height="100%" viewBox="0 0 560 310" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="317" width="100%" height="5"></rect>
+                        <g>
+                            <rect x="60%" y="15" width="7" height="305"></rect>
+                            <rect x="54%" y="0" width="95" height="20" fill="#feb511"></rect>
+                            <text x="55.5%" y="15" dominant-baseline="left" text-anchor="left" fill="#000000" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Javascript</text>
+                        </g>
+                        <g>
+                            <rect x="57%" y="70" width="7" height="250"></rect>
+                            <rect x="48%" y="70" width="52" height="7"></rect>
+                            <rect x="48%" y="55" width="7" height="15"></rect>
+                            <rect x="42%" y="35" width="80" height="20" fill="#c12305"></rect>
+                            <text x="44%" y="50" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Angular</text>
+                        </g>
+                        <g>
+                            <rect x="63%" y="70" width="7" height="250"></rect>
+                            <rect x="63%" y="70" width="52" height="7"></rect>
+                            <rect x="71%" y="55" width="7" height="15"></rect>
+                            <rect x="66%" y="35" width="80" height="20" fill="#01beef"></rect>
+                            <text x="68%" y="50" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Reactjs</text>
+                        </g>
+                        <g>
+                            <rect x="66%" y="90" width="7" height="230"></rect>
+                            <rect x="66%" y="90" width="80" height="7"></rect>
+                            <rect x="79.1%" y="80" width="7" height="15"></rect>
+                            <rect x="74%" y="62" width="80" height="20" fill="#f75b0a"></rect>
+                            <text x="76.5%" y="77" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-family="Arial, Helvetica, sans-serif">HTML5</text>
+                        </g>
+                        <g>
+                            <rect x="54%" y="90" width="7" height="230"></rect>
+                            <rect x="40%" y="90" width="80" height="7"></rect>
+                            <rect x="40%" y="80" width="7" height="15"></rect>
+                            <rect x="31%" y="62" width="80" height="20" fill="#0062cc"></rect>
+                            <text x="33.5%" y="77" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-family="Arial, Helvetica, sans-serif">CSS3</text>
+                        </g>
+                        <g>
+                            <rect x="51%" y="130" width="7" height="190"></rect>
+                            <rect x="37%" y="130" width="80" height="7"></rect>
+                            <rect x="36.9%" y="120" width="7" height="15"></rect>
+                            <rect x="29%" y="102" width="80" height="20" fill="#0b8cde"></rect>
+                            <text x="31%" y="117" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-family="Arial, Helvetica, sans-serif">JQuery</text>
+                        </g>
+                        <g>
+                            <rect x="69%" y="130" width="7" height="190"></rect>
+                            <rect x="69%" y="130" width="80" height="7"></rect>
+                            <rect x="82.1%" y="120" width="7" height="15"></rect>
+                            <rect x="77%" y="102" width="90" height="20" fill="#073654"></rect>
+                            <text x="79%" y="117" dominant-baseline="left" text-anchor="left" fill="#00a8ff" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Phtoshop</text>
+                        </g>
+                        <g>
+                            <rect x="48%" y="170" width="7" height="150"></rect>
+                            <rect x="34%" y="170" width="80" height="7"></rect>
+                            <rect x="33.9%" y="160" width="7" height="15"></rect>
+                            <rect x="25%" y="142" width="90" height="20" fill="#7943f1"></rect>
+                            <text x="26.8%" y="157" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-family="Arial, Helvetica, sans-serif">UI Design</text>
+                        </g>
+                        <g>
+                            <rect x="72%" y="170" width="7" height="150"></rect>
+                            <rect x="72%" y="170" width="80" height="7"></rect>
+                            <rect x="85.1%" y="160" width="7" height="15"></rect>
+                            <rect x="81%" y="142" width="50" height="20" fill="#61350c"></rect>
+                            <text x="83.5%" y="157" dominant-baseline="left" text-anchor="left" fill="#ec7326" font-weight="bold" font-family="Arial, Helvetica, sans-serif">Git</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contactpage">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <svg width="100%" height="100%" viewBox="0 0 1000 140" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <rect x="10%" y="60" width="5" height="80" fill="#000000"></rect>
+                    <rect x="20%" y="60" width="5" height="80" fill="#000000"></rect>
+                    <rect x="5%" y="0" width="220" height="70" fill="#000000"></rect>
+                    <text x="7.7%" y="25" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
+                        piyalidas.it@gmail.com
+                    </text>
+                    <text x="7.7%" y="52" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
+                        meetpiyali@gmail.com
+                    </text>
+                </g>
+                <g>
+                    <rect x="88%" y="60" width="5" height="80" fill="#000000"></rect>
+                    <g>
+                        <rect x="88%" y="20" width="40" height="40" fill="#00b9fc" transform="translate(218 642) rotate(-45)"></rect>
+                        <text x="87.5%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">S</text>
+                    </g>
+                </g>
+                <g>
+                    <rect x="81%" y="60" width="5" height="80" fill="#000000"></rect>
+                    <g>
+                        <rect x="81%" y="20" width="40" height="40" fill="#3f5793" transform="translate(197 594) rotate(-45)"></rect>
+                        <text x="80.7%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">f</text>
+                    </g>
+                </g>
+                <g>
+                    <rect x="74%" y="60" width="5" height="80" fill="#000000"></rect>
+                    <g>
+                        <rect x="74%" y="20" width="40" height="40" fill="#0076b4" transform="translate(177 555) rotate(-45)"></rect>
+                        <text x="73.3%" y="54" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">in</text>
+                    </g>
+                </g>
+            </svg>
+        </div>
+       <svg width="100%" height="100%" viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+        <g>
+            <rect x="0" y="0" width="100%" height="30" fill="#646f75"></rect>
+            <rect x="0" y="29" width="100%" height="30" fill="#525f67"></rect>
+            <rect x="0" y="52" width="100%" height="2" fill="#FFFFFF"></rect>
+            <rect x="0" y="5" width="100%" height="2" fill="#FFFFFF"></rect>
+        </g>
+        <g>
+            <rect x="20" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="90" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="160" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="230" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="300" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="370" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="440" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="510" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="580" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="650" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="720" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="790" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="860" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="930" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="1000" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="1070" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+            <rect x="1140" y="26" width="40" height="6" fill="#FFFFFF"></rect>
+        </g>
+       </svg>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/responsive.js"></script>
+</body>
+</html>

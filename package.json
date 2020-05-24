@@ -1,0 +1,14 @@
+{
+    "name": "personal",
+    "version": "1.0.0",
+    "description": "Personal website o Piyali Das using CSS/SCSS",
+    "author": {
+        "name": "Piyali Das",
+        "email": "piyalidas.it@gmail.com",
+        "url": "https://www.linkedin.com/in/piyalidas10/"
+    },
+    "main": "index.html",
+    "license": "MIT",
+    "scripts": {},
+    "dependencies": {}
+}
