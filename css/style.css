@@ -54,13 +54,16 @@ section::after {
 }
 .sitemenu {
     position: fixed;
-    top: -40px;
+    top: -55px;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -175px;
     z-index: 99;
 }
+.sitemenu > svg > rect:nth-child(1) {
+    fill: linear-gradient(top, #212528, #495259);
+}
 #menuwrapper {
-    width: 300px;
+    width: 350px;
 }
 svg#menuwrapper > g {
     cursor: pointer;
@@ -106,7 +109,6 @@ svg#menuwrapper > g#portolio > rect:nth-child(4) {
     fill: #fbbf6f;
 }
 svg#menuwrapper > g#blog > rect {
-    fill: transparent;
     stroke: #065aad;
     stroke-width: 3;
 }
@@ -115,9 +117,9 @@ svg#menuwrapper > g#blog > line {
     stroke-width: 4px;
 }
 svg#menuwrapper > g#contact > circle:nth-child(1) {
-    fill: transparent;
+    fill: #FFFFFF;
     stroke-width: 3;
-    stroke: #39bf09;
+    stroke: #000000;
 }
 svg#menuwrapper > g#contact > path {
     fill: transparent;
@@ -261,6 +263,81 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
         transform: translateX(0);
     }
 }
+.boat {
+    position: absolute;
+    top: 56%;
+    width: 250px;
+    left: 36%;
+    animation: boatmove 5s linear 2s infinite alternate;
+    animation-delay: -2s;
+}
+
+@keyframes boatmove {
+    0% {
+        top:59%;
+    }
+
+    50% {
+        top:61%;
+    }
+
+    100% {
+        top:59%;
+    }
+}
+@-webkit-keyframes boatmove {
+    0% {
+        top:59%;
+    }
+
+    50% {
+        top:61%;
+    }
+
+    100% {
+        top:59%;
+    }
+}
+@-moz-keyframes boatmove {
+    0% {
+        top:59%;
+    }
+
+    50% {
+        top:61%;
+    }
+
+    100% {
+        top:59%;
+    }
+}
+@-ms-keyframes boatmove {
+    0% {
+        top:59%;
+    }
+
+    50% {
+        top:61%;
+    }
+
+    100% {
+        top:59%;
+    }
+}
+@-o-keyframes boatmove {
+    0% {
+        top:59%;
+    }
+
+    50% {
+        top:61%;
+    }
+
+    100% {
+        top:59%;
+    }
+}
+
 
 .cloudwrapper {
     width: 100%;
@@ -635,9 +712,6 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
 .career-image, .technology-tree {
     width: 50%;
 }
-.career-image > svg > g > rect {
-    fill: #000000;
-}
 .career-image > svg > g > text {
     fill: #FFFFFF;
 }
@@ -651,9 +725,6 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
 .career-image > svg > g#person > line:nth-child(7){
     stroke: #000000;
     stroke-width: 7;
-}
-.career-image > svg > g:nth-child(2n) > rect {
-    fill: #c12305;
 }
 .contact {
     background: #6aac30;
@@ -670,30 +741,8 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
     position: relative;
     top: 5px;
 }
+.socialntw {
+    cursor: pointer;
+}
 
 
-@media screen and (max-width:1100px) {
-    .home:after {
-        bottom: -7px;
-    }
-}
-@media screen and (max-width:900px) {
-    .home:after {
-        bottom: 15px;
-    }
-}
-@media screen and (max-width:768px) {
-    .aboutme .container {
-        padding-top: 30px;
-    }
-}
-@media screen and (max-width:680px) {
-    .home:after {
-        bottom: 40px;
-    }
-}
-@media screen and (max-width:480px) {
-    .home:after {
-        bottom: 55px;
-    }
-}

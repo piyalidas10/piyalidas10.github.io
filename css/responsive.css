@@ -1,0 +1,307 @@
+@media screen and (max-width:1600px) {
+
+    @keyframes boatmove {
+        0% {
+            top:56%;
+        }
+    
+        50% {
+            top:58%;
+        }
+    
+        100% {
+            top:56%;
+        }
+    }
+    @-webkit-keyframes boatmove {
+        0% {
+            top:56%;
+        }
+    
+        50% {
+            top:58%;
+        }
+    
+        100% {
+            top:56%;
+        }
+    }
+    @-moz-keyframes boatmove {
+        0% {
+            top:56%;
+        }
+    
+        50% {
+            top:58%;
+        }
+    
+        100% {
+            top:56%;
+        }
+    }
+    @-ms-keyframes boatmove {
+        0% {
+            top:56%;
+        }
+    
+        50% {
+            top:58%;
+        }
+    
+        100% {
+            top:56%;
+        }
+    }
+    @-o-keyframes boatmove {
+        0% {
+            top:56%;
+        }
+    
+        50% {
+            top:58%;
+        }
+    
+        100% {
+            top:56%;
+        }
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .home:after {
+        bottom: -7px;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .home:after {
+        bottom: 15px;
+    }
+    .boat{
+        width: 200px;
+    }
+    @keyframes boatmove {
+        0% {
+            top:59%;
+        }
+    
+        50% {
+            top:61%;
+        }
+    
+        100% {
+            top:59%;
+        }
+    }
+    @-webkit-keyframes boatmove {
+        0% {
+            top:55%;
+        }
+    
+        50% {
+            top:57%;
+        }
+    
+        100% {
+            top:55%;
+        }
+    }
+    @-moz-keyframes boatmove {
+        0% {
+            top:55%;
+        }
+    
+        50% {
+            top:57%;
+        }
+    
+        100% {
+            top:55%;
+        }
+    }
+    @-ms-keyframes boatmove {
+        0% {
+            top:55%;
+        }
+    
+        50% {
+            top:57%;
+        }
+    
+        100% {
+            top:55%;
+        }
+    }
+    @-o-keyframes boatmove {
+        0% {
+            top:55%;
+        }
+    
+        50% {
+            top:57%;
+        }
+    
+        100% {
+            top:55%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .aboutme .container {
+        padding-top: 30px;
+    }
+    @keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+    @-webkit-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+    @-moz-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+    @-ms-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+    @-o-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:680px) {
+    .home:after {
+        bottom: 40px;
+    }
+    .boat {
+        width: 150px;
+    }
+    @keyframes boatmove {
+        0% {
+            top:50%;
+        }
+    
+        50% {
+            top:51%;
+        }
+    
+        100% {
+            top:50%;
+        }
+    }
+    @-webkit-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+    @-moz-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+    @-ms-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+    @-o-keyframes boatmove {
+        0% {
+            top:45%;
+        }
+    
+        50% {
+            top:46%;
+        }
+    
+        100% {
+            top:45%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:480px) {
+    .home:after {
+        bottom: 55px;
+    }
+}

@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Keywords" content="Piyali Das">
         <meta name="Description" content="Personal Website, Resume, Website">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
     </head>
 <body>
 
@@ -14,48 +15,53 @@
         <div class="top">
             <div class="menu">
                 <div class="sitemenu">
-                    <svg width="100%" height="100%" viewBox='0 0 250 90'  xmlns="http://www.w3.org/2000/svg" id="menuwrapper">
-                        <rect x="0" y="75" width="100%" height="15"></rect>
+                    <svg width="100%" height="100%" viewBox='0 0 300 100'  xmlns="http://www.w3.org/2000/svg" id="menuwrapper">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" style="stop-color:#848b95;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:#aeb5ba;stop-opacity:1" />
+                            </linearGradient>
+                          </defs>
+                        <polygon points="20 80 285 80 305 105 0 100" fill="url(#grad1)"></polygon>
                         <g id="home" onclick="gotoHome()">
-                            <rect x="22" y="38" width="5" height="10"></rect>
-                            <rect x="0" y="50" width="30" height="20"></rect>
-                            <polygon points="0 50 30 50 15 35 0 50"></polygon>
-                            <rect x="10" y="55" width="9" height="15"></rect>
-                            <rect x="10" y="25" width="3" height="5"></rect>
+                            <rect x="52" y="58" width="5" height="10"></rect>
+                            <rect x="30" y="70" width="30" height="20"></rect>
+                            <polygon points="0 70 60 70 45 55 30 70"></polygon>
+                            <rect x="40" y="75" width="9" height="15"></rect>                            
                         </g>
                         <g id="about" onclick="gotoAboutme()">
-                            <circle cx="60" cy="53" r="16"/>
-                            <circle cx="55" cy="50" r="4"/>
-                            <circle cx="65" cy="50" r="4"/>
-                            <ellipse cx="61" cy="59" rx="9" ry="2.5" />
+                            <circle cx="90" cy="73" r="16"/>
+                            <circle cx="85" cy="70" r="4"/>
+                            <circle cx="95" cy="70" r="4"/>
+                            <ellipse cx="91" cy="79" rx="9" ry="2.5" />
                         </g>
                         <g id="career" onclick="gotoCareer()">
-                            <rect x="90" y="39" width="30" height="32"></rect>
-                            <rect x="90" y="61" width="9" height="10"></rect>
-                            <rect x="100" y="56" width="9" height="15"></rect>
-                            <rect x="110" y="51" width="9" height="20"></rect>
-                            <line x1="90" y1="56" x2="118" y2="42"></line>
-                            <line x1="114" y1="50" x2="118" y2="41"></line>
-                            <line x1="110" y1="40" x2="118" y2="42"></line>
+                            <rect x="120" y="59" width="30" height="32"></rect>
+                            <rect x="120" y="81" width="9" height="10"></rect>
+                            <rect x="130" y="76" width="9" height="15"></rect>
+                            <rect x="140" y="71" width="9" height="20"></rect>
+                            <line x1="120" y1="76" x2="148" y2="62"></line>
+                            <line x1="144" y1="70" x2="149" y2="61"></line>
+                            <line x1="142" y1="59" x2="147" y2="61"></line>
                         </g>
                         <g id="portolio" onclick="gotoPortfolio()">
-                            <circle cx="147" cy="45" r="8"/>
-                            <rect x="134" y="47" width="26" height="24"></rect>
-                            <path d="M 136 56 C 136 59, 147 68, 158.5 57"></path>
-                            <rect x="144" y="57" width="6" height="9"></rect>
+                            <circle cx="177" cy="65" r="8"/>
+                            <rect x="164" y="67" width="26" height="24"></rect>
+                            <path d="M 165 75 C 170 85, 180 85, 188.5 75"></path>
+                            <rect x="174" y="77" width="6" height="9"></rect>
                         </g>
                         <g id="blog" onclick="gotoBlog()">
-                            <rect x="175" y="41" width="22" height="28"></rect>
-                            <rect x="181" y="48" width="10" height="1"></rect>
-                            <rect x="181" y="55" width="6" height="1"></rect>
-                            <rect x="181" y="62" width="3" height="1"></rect>
-                            <line x1="189" y1="63" x2="205" y2="46"></line>
+                            <rect x="205" y="61" width="22" height="28" fill="#FFFFFF"></rect>
+                            <rect x="211" y="68" width="10" height="1"></rect>
+                            <rect x="211" y="75" width="6" height="1"></rect>
+                            <rect x="211" y="82" width="3" height="1"></rect>
+                            <line x1="219" y1="83" x2="240" y2="60"></line>
                         </g>
                         <g id="contact" onclick="gotoContact()">
-                            <circle cx="232" cy="54" r="16"></circle>
-                            <path d="M 226 67 C 226 62, 240 65, 238.5 40"></path>
-                            <ellipse cx="223" cy="62" rx="5" ry="6"></ellipse>
-                            <ellipse cx="236" cy="43" rx="5" ry="6"></ellipse>
+                            <circle cx="262" cy="74" r="16"></circle>
+                            <path d="M 256 87 C 256 82, 270 85, 268.5 60"></path>
+                            <ellipse cx="253" cy="82" rx="5" ry="6"></ellipse>
+                            <ellipse cx="266" cy="63" rx="5" ry="6"></ellipse>
                         </g>
                     </svg>
                 </div>
@@ -147,6 +153,15 @@
                     </g>
                 </svg>
             </div>
+        </div>
+        <div class="boat">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500">
+                <polygon points="100 463.5 480 463.5 590 342 22 385" fill="#8e291d"></polygon>
+                <rect x="220" y="40" width="10" height="310" fill="#e0a557"></rect>
+                <polygon points="123.33 120.5 225.05 40.5 220.69 100.58 220.69 90.5" fill="#4e919b"></polygon>
+                <polygon points="223.33 350.5 220.05 103.5 219.69 114.58 32.33 368.5" fill="#feb511"></polygon>
+                <polygon points="553.33 325.5 245 103.5 245 114.58 245 348.5" fill="#12b9ff"></polygon>
+            </svg>
         </div>
         <div class="bottom">
             <div class="field" id="field">
@@ -324,32 +339,32 @@
                     <rect x="10%" y="60" width="5" height="80" fill="#000000"></rect>
                     <rect x="20%" y="60" width="5" height="80" fill="#000000"></rect>
                     <rect x="5%" y="0" width="220" height="70" fill="#000000"></rect>
-                    <text x="7.7%" y="25" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
+                    <text id="primarymail" x="7.7%" y="25" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
                         piyalidas.it@gmail.com
                     </text>
-                    <text x="7.7%" y="52" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
+                    <text id="secondarymail" x="7.7%" y="52" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
                         meetpiyali@gmail.com
                     </text>
                 </g>
-                <g>
+                <g class="socialntw" id="skype" onclick="gotoNetwork('skype')">
                     <rect x="88%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
                         <rect x="88%" y="20" width="40" height="40" fill="#00b9fc" transform="translate(218 642) rotate(-45)"></rect>
                         <text x="87.5%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">S</text>
                     </g>
                 </g>
-                <g>
+                <g class="socialntw" id="facebook" onclick="gotoNetwork('facebook')">
                     <rect x="81%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
                         <rect x="81%" y="20" width="40" height="40" fill="#3f5793" transform="translate(197 594) rotate(-45)"></rect>
                         <text x="80.7%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">f</text>
                     </g>
                 </g>
-                <g>
+                <g class="socialntw" id="linkedin" onclick="gotoNetwork('linkedin')">
                     <rect x="74%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
-                        <rect x="74%" y="20" width="40" height="40" fill="#0076b4" transform="translate(177 555) rotate(-45)"></rect>
-                        <text x="73.3%" y="54" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">in</text>
+                        <rect x="74.8%" y="12" width="40" height="40" fill="#0076b4" transform="translate(177 555) rotate(-45)"></rect>
+                        <text x="73.3%" y="43" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">in</text>
                     </g>
                 </g>
             </svg>

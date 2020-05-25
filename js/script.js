@@ -11,6 +11,15 @@ var createClouds = (function() {
         }
 })();
 
+// Career stairs color change
+var createColorsForCareer = (function() {
+    let rectElem = document.querySelectorAll('.career-image > svg > g:nth-child(2n) > rect');
+    rectElem.forEach(ele => {
+        ele.setAttribute("fill", "#c12305");
+    });
+    console.log(ele);
+})();
+
 function gotoHome() {
     let homePage = document.getElementById('homepage');
     homePage.scrollIntoView();
@@ -40,3 +49,29 @@ function gotoContact() {
     let contactPage = document.getElementById('contactpage');
     contactPage.scrollIntoView({ behavior: 'smooth'});
 }
+
+function gotoNetwork(param) {
+    if (param === 'skype') {
+        let skypename = 'piyalidas.it';
+        window.location = 'skype:' + skypename + '?chat';
+    }
+    if (param === 'facebook') {
+        window.open("https://www.facebook.com/piyalidas10");
+    }
+    if (param === 'linkedin') {
+        window.open("https://www.linkedin.com/in/piyalidas10/");
+    }
+}
+
+document.getElementById("primarymail").addEventListener("click", sentmail);
+document.getElementById("secondarymail").addEventListener("click", sentmail);
+
+function sentmail() {
+    let val = this.innerHTML;
+    console.log(this.innerHTML);
+    let emailTo = val;
+    window.open("mailto:"+emailTo);
+}
+
+console.log(document.querySelectorAll('.socialntw'));
+console.log(document.getElementsByClassName('socialntw'));
