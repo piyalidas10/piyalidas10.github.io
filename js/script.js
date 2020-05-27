@@ -17,7 +17,6 @@ var createColorsForCareer = (function() {
     rectElem.forEach(ele => {
         ele.setAttribute("fill", "#c12305");
     });
-    console.log(ele);
 })();
 
 function gotoHome() {

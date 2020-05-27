@@ -229,71 +229,72 @@
         bottom: 40px;
     }
     .boat {
-        width: 150px;
+        width: 100px;
+        left: 32%;
     }
     @keyframes boatmove {
         0% {
-            top:50%;
+            top:55%;
         }
     
         50% {
-            top:51%;
+            top:56%;
         }
     
         100% {
-            top:50%;
+            top:55%;
         }
     }
     @-webkit-keyframes boatmove {
         0% {
-            top:45%;
+            top:55%;
         }
     
         50% {
-            top:46%;
+            top:56%;
         }
     
         100% {
-            top:45%;
+            top:55%;
         }
     }
     @-moz-keyframes boatmove {
         0% {
-            top:45%;
+            top:55%;
         }
     
         50% {
-            top:46%;
+            top:56%;
         }
     
         100% {
-            top:45%;
+            top:55%;
         }
     }
     @-ms-keyframes boatmove {
         0% {
-            top:45%;
+            top:55%;
         }
     
         50% {
-            top:46%;
+            top:56%;
         }
     
         100% {
-            top:45%;
+            top:55%;
         }
     }
     @-o-keyframes boatmove {
         0% {
-            top:45%;
+            top:55%;
         }
     
         50% {
-            top:46%;
+            top:56%;
         }
     
         100% {
-            top:45%;
+            top:55%;
         }
     }
 }
@@ -303,5 +304,15 @@
 @media screen and (max-width:480px) {
     .home:after {
         bottom: 55px;
+    }
+    .bottom{
+        height: 150px;
+    }
+    .waves:after{
+        height: 50px;
+        bottom: -4px;
+    }
+    .aboutme .container {
+        padding-top: 0;
     }
 }

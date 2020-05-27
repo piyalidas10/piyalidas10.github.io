@@ -1,4 +1,4 @@
-var deviceWidthCheck = (function() {
+function responsive() {
     let wavesDiv = document.getElementById('waves');
     let treeDiv = document.getElementById('tree');
     let fieldDiv = document.getElementById('field');
@@ -8,6 +8,8 @@ var deviceWidthCheck = (function() {
     let sunraysDiv = document.getElementById('sunrays');
     let ballonDiv = document.getElementById('ballon');
     let middleDiv = document.getElementById('middle');
+    let menuDiv = document.getElementById('menuwrapper');
+    let sitemenuDiv = document.getElementById('sitemenu');
 
     if (screen.width <= 1200) {
         wavesDiv.style.height = '80%';
@@ -56,13 +58,17 @@ var deviceWidthCheck = (function() {
         treeDiv.style.top = '-140px';
         // wavesDiv.style.
     }
-    if (screen.width <= 440) {
+    if (screen.width <= 480) {
         middleDiv.style.height = '200px';
-        ballonDiv.style.width = '200px';
+        ballonDiv.style.width = '180px';
         ballonDiv.style.right = '10%';
         personinfoDiv.style.width = '150px';
         wavesDiv.style.height = '50%';
         fieldDiv.style.top = '-50px';
         treeDiv.style.top = '-130px';
+        menuDiv.style.width = '300px';
+        sitemenuDiv.style.marginLeft = '-150px';
     }
-})();
+}
+const deviceWidthCheck = responsive();
+window.onresize = function(){ location.reload(); }
