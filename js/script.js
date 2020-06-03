@@ -1,4 +1,4 @@
-import socialLinks from './constants.js'; 
+import {socialLinks} from './constants.js'; 
 console.log('socialLinks => ', socialLinks);
 var createClouds = (function() {
         let cloudElem = document.getElementById('cloud');
