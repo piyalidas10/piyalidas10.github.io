@@ -1,3 +1,5 @@
+import socialLinks from './constants.js'; 
+console.log('socialLinks => ', socialLinks);
 var createClouds = (function() {
         let cloudElem = document.getElementById('cloud');
         let cloudWrapper = document.getElementById('cloudwrapper');
@@ -19,58 +21,47 @@ var createColorsForCareer = (function() {
     });
 })();
 
-function gotoHome() {
-    let homePage = document.getElementById('homepage');
-    homePage.scrollIntoView();
-}
-
-function gotoAboutme() {
-    let aboutmePage = document.getElementById('aboutmepage');
-    aboutmePage.scrollIntoView({ behavior: 'smooth'});
-}
-
-function gotoCareer() {
-    let careerPage = document.getElementById('careerpage');
-    careerPage.scrollIntoView({ behavior: 'smooth'});
-}
-
-function gotoPortfolio() {
-    let portfolioPage = document.getElementById('portfoliopage');
-    portfolioPage.scrollIntoView({ behavior: 'smooth'});
-}
-
-function gotoBlog() {
-    let blogPage = document.getElementById('blogpage');
-    blogPage.scrollIntoView({ behavior: 'smooth'});
-}
-
-function gotoContact() {
-    let contactPage = document.getElementById('contactpage');
-    contactPage.scrollIntoView({ behavior: 'smooth'});
-}
-
-function gotoNetwork(param) {
-    if (param === 'skype') {
-        let skypename = 'piyalidas.it';
-        window.location = 'skype:' + skypename + '?chat';
+// scroll to page section
+var gotoPageSection = (function() {
+    function getpageid(page) {
+        let pageid = document.getElementById(page+'page');
+        return pageid;
     }
-    if (param === 'facebook') {
-        window.open("https://www.facebook.com/piyalidas10");
+    return {
+        go: function(page) {
+            let pagename = getpageid(page);
+            pagename.scrollIntoView({ behavior: 'smooth'});
+        }
     }
-    if (param === 'linkedin') {
-        window.open("https://www.linkedin.com/in/piyalidas10/");
+})();
+
+// open social network page
+var socialNetworkPages = (function(){
+    return {
+        go: function(socialpage) {
+            console.log('socialLinks => ', socialLinks);
+            let link = socialLinks[socialpage];
+            if (socialpage === 'skype') {
+                window.location = 'skype:' + link + '?chat';
+            } else if (socialpage.indexOf('mail') !== -1) {
+                window.open("mailto:"+link);
+            } else {
+                window.open(link);
+            }
+        }
+    }
+})();
+
+// get current time using timer to change scenery
+function timerToChangeScenery() {
+    let d = new Date();
+    let timer;
+    let hours = d.getHours();
+    if (hours >= 18) {
+        console.log('Evening');
+        window.clearTimeout(timer);
+    } else {
+        console.log('Morning');
     }
 }
-
-document.getElementById("primarymail").addEventListener("click", sentmail);
-document.getElementById("secondarymail").addEventListener("click", sentmail);
-
-function sentmail() {
-    let val = this.innerHTML;
-    console.log(this.innerHTML);
-    let emailTo = val;
-    window.open("mailto:"+emailTo);
-}
-
-console.log(document.querySelectorAll('.socialntw'));
-console.log(document.getElementsByClassName('socialntw'));
+setInterval(timerToChangeScenery,3000);

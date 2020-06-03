@@ -10,8 +10,7 @@
         <link rel="stylesheet" href="css/responsive.css" />
     </head>
 <body>
-
-    <section class="home" id="homepage">
+    <section class="home nightbg" id="homepage">
         <div class="top">
             <div class="menu">
                 <div class="sitemenu" id="sitemenu">
@@ -23,19 +22,19 @@
                             </linearGradient>
                           </defs>
                         <polygon points="20 80 285 80 305 105 0 100" fill="url(#grad1)"></polygon>
-                        <g id="home" onclick="gotoHome()">
+                        <g id="home" onclick="gotoPageSection.go('home')">
                             <rect x="52" y="58" width="5" height="10"></rect>
                             <rect x="30" y="70" width="30" height="20"></rect>
                             <polygon points="0 70 60 70 45 55 30 70"></polygon>
                             <rect x="40" y="75" width="9" height="15"></rect>                            
                         </g>
-                        <g id="about" onclick="gotoAboutme()">
+                        <g id="about" onclick="gotoPageSection.go('aboutme')">
                             <circle cx="90" cy="73" r="16"/>
                             <circle cx="85" cy="70" r="4"/>
                             <circle cx="95" cy="70" r="4"/>
                             <ellipse cx="91" cy="79" rx="9" ry="2.5" />
                         </g>
-                        <g id="career" onclick="gotoCareer()">
+                        <g id="career" onclick="gotoPageSection.go('career')">
                             <rect x="120" y="59" width="30" height="32"></rect>
                             <rect x="120" y="81" width="9" height="10"></rect>
                             <rect x="130" y="76" width="9" height="15"></rect>
@@ -44,20 +43,20 @@
                             <line x1="144" y1="70" x2="149" y2="61"></line>
                             <line x1="142" y1="59" x2="147" y2="61"></line>
                         </g>
-                        <g id="portolio" onclick="gotoPortfolio()">
+                        <g id="portolio" onclick="gotoPageSection.go('portfolio')">
                             <circle cx="177" cy="65" r="8"/>
                             <rect x="164" y="67" width="26" height="24"></rect>
                             <path d="M 165 75 C 170 85, 180 85, 188.5 75"></path>
                             <rect x="174" y="77" width="6" height="9"></rect>
                         </g>
-                        <g id="blog" onclick="gotoBlog()">
+                        <g id="blog" onclick="gotoPageSection.go('blog')">
                             <rect x="205" y="61" width="22" height="28" fill="#FFFFFF"></rect>
                             <rect x="211" y="68" width="10" height="1"></rect>
                             <rect x="211" y="75" width="6" height="1"></rect>
                             <rect x="211" y="82" width="3" height="1"></rect>
                             <line x1="219" y1="83" x2="240" y2="60"></line>
                         </g>
-                        <g id="contact" onclick="gotoContact()">
+                        <g id="contact" onclick="gotoPageSection.go('contact')">
                             <circle cx="262" cy="74" r="16"></circle>
                             <path d="M 256 87 C 256 82, 270 85, 268.5 60"></path>
                             <ellipse cx="253" cy="82" rx="5" ry="6"></ellipse>
@@ -223,41 +222,74 @@
                 <div class="career-image">
                     <svg width="100%" height="100%" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
                         <g id="person">
-                            <circle cx="467" cy="12" r="10"></circle>
-                            <rect x="456" y="22" width="22" height="33"></rect>
-                            <rect x="460" y="54" width="5" height="16"></rect>
-                            <rect x="469" y="54" width="5" height="16"></rect>
-                            <line x1="469" y1="40" x2="490" y2="30"></line>
-                            <line x1="488.5" y1="31" x2="484" y2="12"></line>
-                            <line x1="478" y1="13" x2="512" y2="11"></line>
-                            <circle cx="512" cy="11" r="5"></circle>
+                            <circle cx="467" cy="12" r="10">
+                                <animate attributeName="cx" from="560" to="467" dur="1s" fill="freeze" />
+                            </circle>
+                            <rect x="456" y="22" width="22" height="33">
+                                <animate attributeName="x" from="560" to="456" dur="1s" fill="freeze" />
+                            </rect>
+                            <rect x="460" y="54" width="5" height="16">
+                                <animate attributeName="x" from="560" to="460" dur="1s" fill="freeze" />
+                            </rect>
+                            <rect x="469" y="54" width="5" height="16">
+                                <animate attributeName="x" from="560" to="469" dur="1s" fill="freeze" />
+                            </rect>
+                            <line x1="469" y1="40" x2="490" y2="30">
+                                <animate attributeName="x1" from="560" to="469" dur="1s" fill="freeze" />
+                                <animate attributeName="x2" from="560" to="490" dur="1s" fill="freeze" />
+                            </line>
+                            <line x1="488.5" y1="31" x2="484" y2="12">
+                                <animate attributeName="x1" from="560" to="488.5" dur="1s" fill="freeze" />
+                                <animate attributeName="x2" from="560" to="484" dur="1s" fill="freeze" />
+                            </line>
+                            <line x1="478" y1="13" x2="512" y2="11">
+                                <animate attributeName="x1" from="560" to="478" dur="1s" fill="freeze" />
+                                <animate attributeName="x2" from="560" to="512" dur="1s" fill="freeze" />
+                            </line>
+                            <circle cx="512" cy="11" r="5">
+                                <animate attributeName="cx" from="560" to="512" dur="1s" fill="freeze" />
+                            </circle>
                         </g>
                         <g>
-                            <rect x="80%" y="70" width="20%" height="32"></rect>
+                            <rect x="80%" y="70" width="20%" height="32">
+                                <animate attributeName="x" from="100%" to="80%" dur="0.5s" fill="freeze" />
+                            </rect>
                             <text x="83%" y="90" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Accenture</text>
                         </g>
                         <g>
-                            <rect x="70%" y="110" width="30%" height="32"></rect>
+                            <rect x="70%" y="110" width="30%" height="32">
+                                <animate attributeName="x" from="100%" to="70%" dur="0.75s" fill="freeze" />
+                            </rect>
                             <text x="73%" y="130" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Cognizant</text>
                         </g>
                         <g>
-                            <rect x="60%" y="150" width="40%" height="32"></rect>
+                            <rect x="60%" y="150" width="40%" height="32">
+                                <animate attributeName="x" from="100%" to="60%" dur="1s" fill="freeze" />
+                            </rect>
                             <text x="63%" y="170" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Praxis</text>
                         </g>
                         <g>
-                            <rect x="50%" y="190" width="50%" height="32"></rect>
+                            <rect x="50%" y="190" width="50%" height="32">
+                                <animate attributeName="x" from="100%" to="50%" dur="1.25s" fill="freeze" />
+                            </rect>
                             <text x="53%" y="210" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">ASRMAC</text>
                         </g>
                         <g>
-                            <rect x="40%" y="230" width="60%" height="32"></rect>
+                            <rect x="40%" y="230" width="60%" height="32">
+                                <animate attributeName="x" from="100%" to="40%" dur="1.5s" fill="freeze" />
+                            </rect>
                             <text x="43%" y="250" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">NIC</text>
                         </g>
                         <g>
-                            <rect x="30%" y="270" width="70%" height="32"></rect>
+                            <rect x="30%" y="270" width="70%" height="32">
+                                <animate attributeName="x" from="100%" to="30%" dur="1.75s" fill="freeze" />
+                            </rect>
                             <text x="33%" y="290" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Clematis</text>
                         </g>
                         <g>
-                            <rect x="20%" y="310" width="80%" height="32"></rect>
+                            <rect x="20%" y="310" width="80%" height="32">
+                                <animate attributeName="x" from="100%" to="20%" dur="2s" fill="freeze" />
+                            </rect>
                             <text x="23%" y="330" dominant-baseline="left" text-anchor="left" font-family="Arial, Helvetica, sans-serif">Zeon Group</text>
                         </g>
                     </svg>
@@ -339,28 +371,28 @@
                     <rect x="10%" y="60" width="5" height="80" fill="#000000"></rect>
                     <rect x="20%" y="60" width="5" height="80" fill="#000000"></rect>
                     <rect x="5%" y="0" width="220" height="70" fill="#000000"></rect>
-                    <text id="primarymail" x="7.7%" y="25" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
+                    <text onclick="socialNetworkPages.go('primarymail')" x="7.7%" y="25" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
                         piyalidas.it@gmail.com
                     </text>
-                    <text id="secondarymail" x="7.7%" y="52" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
+                    <text onclick="socialNetworkPages.go('secondarymail')" x="7.7%" y="52" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
                         meetpiyali@gmail.com
                     </text>
                 </g>
-                <g class="socialntw" id="skype" onclick="gotoNetwork('skype')">
+                <g class="socialntw" id="skype" onclick="socialNetworkPages.go('skype')">
                     <rect x="88%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
                         <rect x="88%" y="20" width="40" height="40" fill="#00b9fc" transform="translate(218 642) rotate(-45)"></rect>
                         <text x="87.5%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">S</text>
                     </g>
                 </g>
-                <g class="socialntw" id="facebook" onclick="gotoNetwork('facebook')">
+                <g class="socialntw" id="facebook" onclick="socialNetworkPages.go('facebook')">
                     <rect x="81%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
                         <rect x="81%" y="20" width="40" height="40" fill="#3f5793" transform="translate(197 594) rotate(-45)"></rect>
                         <text x="80.7%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">f</text>
                     </g>
                 </g>
-                <g class="socialntw" id="linkedin" onclick="gotoNetwork('linkedin')">
+                <g class="socialntw" id="linkedin" onclick="socialNetworkPages.go('linkedin')">
                     <rect x="74%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
                         <rect x="74.8%" y="12" width="40" height="40" fill="#0076b4" transform="translate(177 555) rotate(-45)"></rect>
@@ -397,8 +429,7 @@
         </g>
        </svg>
     </section>
-
-    <script src="js/script.js"></script>
-    <script src="js/responsive.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/responsive.js"></script>
 </body>
 </html>
