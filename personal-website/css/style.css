@@ -37,6 +37,24 @@ section::after {
     /* Opera 11.10+ */
     background: -o-linear-gradient(top, #d9eefd, #FFFFFF);
 }
+.nightbg {
+    background-color: #020e41;
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#020e41), to(#05060e));
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #020e41, #05060e);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #020e41, #05060e);
+
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #020e41, #05060e);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #020e41, #05060e);
+}
 .hamburger {
     position: absolute;
     width: 90px;
@@ -80,7 +98,7 @@ svg#menuwrapper > g#home > rect:nth-child(4) {
 svg#menuwrapper > g#home > polygon {
    fill: #c12305;
 }
-svg#menuwrapper > g#about > circle:nth-child(1) {
+svg#menuwrapper > g#aboutme > circle:nth-child(1) {
     fill: #fdedd7;
     stroke-width: 3;
     stroke: #c12305;

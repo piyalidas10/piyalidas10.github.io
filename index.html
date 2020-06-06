@@ -3,14 +3,11 @@
     <head>
         <title>Piyali Das</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
-        <meta name="Keywords" content="Piyali Das">
-        <meta name="Description" content="Personal Website, Resume, Website">
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="./personal-website/css/style.css" />
+        <link rel="stylesheet" href="./personal-website/css/responsive.css" />
     </head>
 <body>
-    <section class="home nightbg" id="homepage">
+    <section class="home" id="homepage">
         <div class="top">
             <div class="menu">
                 <div class="sitemenu" id="sitemenu">
@@ -22,19 +19,19 @@
                             </linearGradient>
                           </defs>
                         <polygon points="20 80 285 80 305 105 0 100" fill="url(#grad1)"></polygon>
-                        <g id="home" onclick="gotoPageSection.go('home')">
+                        <g id="home">
                             <rect x="52" y="58" width="5" height="10"></rect>
                             <rect x="30" y="70" width="30" height="20"></rect>
                             <polygon points="0 70 60 70 45 55 30 70"></polygon>
                             <rect x="40" y="75" width="9" height="15"></rect>                            
                         </g>
-                        <g id="about" onclick="gotoPageSection.go('aboutme')">
+                        <g id="aboutme">
                             <circle cx="90" cy="73" r="16"/>
                             <circle cx="85" cy="70" r="4"/>
                             <circle cx="95" cy="70" r="4"/>
                             <ellipse cx="91" cy="79" rx="9" ry="2.5" />
                         </g>
-                        <g id="career" onclick="gotoPageSection.go('career')">
+                        <g id="career">
                             <rect x="120" y="59" width="30" height="32"></rect>
                             <rect x="120" y="81" width="9" height="10"></rect>
                             <rect x="130" y="76" width="9" height="15"></rect>
@@ -43,20 +40,20 @@
                             <line x1="144" y1="70" x2="149" y2="61"></line>
                             <line x1="142" y1="59" x2="147" y2="61"></line>
                         </g>
-                        <g id="portolio" onclick="gotoPageSection.go('portfolio')">
+                        <g id="portolio">
                             <circle cx="177" cy="65" r="8"/>
                             <rect x="164" y="67" width="26" height="24"></rect>
                             <path d="M 165 75 C 170 85, 180 85, 188.5 75"></path>
                             <rect x="174" y="77" width="6" height="9"></rect>
                         </g>
-                        <g id="blog" onclick="gotoPageSection.go('blog')">
+                        <g id="blog">
                             <rect x="205" y="61" width="22" height="28" fill="#FFFFFF"></rect>
                             <rect x="211" y="68" width="10" height="1"></rect>
                             <rect x="211" y="75" width="6" height="1"></rect>
                             <rect x="211" y="82" width="3" height="1"></rect>
                             <line x1="219" y1="83" x2="240" y2="60"></line>
                         </g>
-                        <g id="contact" onclick="gotoPageSection.go('contact')">
+                        <g id="contact">
                             <circle cx="262" cy="74" r="16"></circle>
                             <path d="M 256 87 C 256 82, 270 85, 268.5 60"></path>
                             <ellipse cx="253" cy="82" rx="5" ry="6"></ellipse>
@@ -113,8 +110,8 @@
             <div class="personinfo" id="personinfo">
                 <svg height="100%" width="100%" viewBox="0 0 250 120">
                     <g>
-                        <text x="0" y="50" dominant-baseline="left" text-anchor="left" id="name" font-family="Arial, Helvetica, sans-serif">Piyali Das</text>
-                        <text x="0" y="90" dominant-baseline="left" text-anchor="left" id="designation" font-family="Arial, Helvetica, sans-serif">UI Developer</text>
+                        <text x="0" y="50" dominant-baseline="left" text-anchor="left" id="name" font-family="Arial, Helvetica, sans-serif"></text>
+                        <text x="0" y="90" dominant-baseline="left" text-anchor="left" id="designation" font-family="Arial, Helvetica, sans-serif"></text>
                     </g>
                 </svg>
             </div>
@@ -197,27 +194,11 @@
 
     <section class="aboutme" id="aboutmepage">
         <div class="container">
-            <h1>About Me</h1>
-            <div class="mypic"></div>
-            <div class="myintro">
-                <h4>My Specialities :</h4>
-                <ul>
-                <li>Developing Reusable components in angular for them who don't want to use third part libraries in Angular</li>
-                <li>Experience in Developing HTML (4/5), CSS (2/3), JavaScript, TypeScript, Angular (5/6), NPM, jQuery, AJAX, Bootstrap, JSON, SASS, Highcharts.</li>
-                <li>Angular 6 developer with 2 yrs + ( es6 + typescript )</li>
-                <li>Specialist in CSS3/ RWD/ Media Queries/ Bootstrap</li>
-                <li>Have basic knowledge in Jenkins</li>
-                <li>Having experience working under Agile methodologies environment (scrum)</li>
-                <li>Experience in using Chrome Developer Tools and Firebug for debugging and troubleshooting the code</li>
-                <li>Hands on experience in Photoshop with UI design for Website layout/ Native Mobile APP</li>
-                </ul> 
-            </div>
         </div>
     </section>
 
     <section class="career" id="careerpage">
         <div class="container">
-            <h1>My Career</h1>
             <div class="career-container">
                 <div class="career-image">
                     <svg width="100%" height="100%" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
@@ -365,38 +346,35 @@
     </section>
     <section class="contact" id="contactpage">
         <div class="container">
-            <h1>Contact Me</h1>
             <svg width="100%" height="100%" viewBox="0 0 1000 140" xmlns="http://www.w3.org/2000/svg">
                 <g>
                     <rect x="10%" y="60" width="5" height="80" fill="#000000"></rect>
                     <rect x="20%" y="60" width="5" height="80" fill="#000000"></rect>
                     <rect x="5%" y="0" width="220" height="70" fill="#000000"></rect>
-                    <text onclick="socialNetworkPages.go('primarymail')" x="7.7%" y="25" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
-                        piyalidas.it@gmail.com
+                    <text id="primarymail" x="7.7%" y="25" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
                     </text>
-                    <text onclick="socialNetworkPages.go('secondarymail')" x="7.7%" y="52" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
-                        meetpiyali@gmail.com
+                    <text id="secondarymail" x="7.7%" y="52" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="16" font-family="Arial, Helvetica, sans-serif">
                     </text>
                 </g>
-                <g class="socialntw" id="skype" onclick="socialNetworkPages.go('skype')">
+                <g class="socialntw">
                     <rect x="88%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
-                        <rect x="88%" y="20" width="40" height="40" fill="#00b9fc" transform="translate(218 642) rotate(-45)"></rect>
-                        <text x="87.5%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">S</text>
+                        <rect id="skype" x="88%" y="20" width="40" height="40" fill="#00b9fc" transform="translate(218 642) rotate(-45)"></rect>
+                        <text id="skype" x="87.5%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">S</text>
                     </g>
                 </g>
-                <g class="socialntw" id="facebook" onclick="socialNetworkPages.go('facebook')">
+                <g class="socialntw">
                     <rect x="81%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
-                        <rect x="81%" y="20" width="40" height="40" fill="#3f5793" transform="translate(197 594) rotate(-45)"></rect>
-                        <text x="80.7%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">f</text>
+                        <rect id="facebook" x="81%" y="20" width="40" height="40" fill="#3f5793" transform="translate(197 594) rotate(-45)"></rect>
+                        <text id="facebook" x="80.7%" y="44" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">f</text>
                     </g>
                 </g>
-                <g class="socialntw" id="linkedin" onclick="socialNetworkPages.go('linkedin')">
+                <g class="socialntw">
                     <rect x="74%" y="60" width="5" height="80" fill="#000000"></rect>
                     <g>
-                        <rect x="74.8%" y="12" width="40" height="40" fill="#0076b4" transform="translate(177 555) rotate(-45)"></rect>
-                        <text x="73.3%" y="43" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">in</text>
+                        <rect id="linkedin" x="74.8%" y="12" width="40" height="40" fill="#0076b4" transform="translate(177 555) rotate(-45)"></rect>
+                        <text id="linkedin" x="73.3%" y="43" dominant-baseline="left" text-anchor="left" fill="#FFFFFF" font-weight="bold" font-size="24" font-family="Arial, Helvetica, sans-serif">in</text>
                     </g>
                 </g>
             </svg>
@@ -429,8 +407,7 @@
         </g>
        </svg>
     </section>
-    <script type="module" src="./js/main.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/responsive.js"></script>
+    <script type="module" src="./personal-website/js/main.js"></script>
+    <script src="./personal-website/js/responsive.js"></script>
 </body>
 </html>
