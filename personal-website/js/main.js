@@ -2,7 +2,6 @@ import {socialLinks, metaTags, siteContent} from './constants.js';
 import {createClouds, createColorsForCareer, timerToChangeScenery, createMetaTag, gotoPageSection, setSiteContent, svgHtmlInsertUsingId, openSocialNetworkPage} from './utils.js'; 
 
 createClouds();
-console.log(createClouds.cloudElem);
 createColorsForCareer();
 setInterval(timerToChangeScenery(),3000);
 

@@ -6,7 +6,7 @@ export let metaTags = {
     'Description': 'Personal Website, Resume, Website',
     'Content-Type': 'text/html; charset=utf-8'
 };
-
+Object.freeze(metaTags);
 export let siteContent = {
     name: 'Piyali Das',
     designation: 'UI Developer',
@@ -33,7 +33,7 @@ export let siteContent = {
         }
     ]
 };
-
+Object.freeze(siteContent);
 export let socialLinks = {
     facebook: 'https://www.facebook.com/piyalidas10',
     linkedin: 'https://www.linkedin.com/in/piyalidas10/',
@@ -41,3 +41,4 @@ export let socialLinks = {
     primarymail: 'piyalidas.it@gmail.com',
     secondarymail: 'meetpiyali@gmail.com'
 };
+Object.freeze(socialLinks);
