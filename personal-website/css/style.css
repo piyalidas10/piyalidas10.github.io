@@ -154,7 +154,7 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
 }
 .bottom {
     position: relative;
-    height: 190px;
+    height: 210px;
 }
 .home:after {
     left: 50%;
@@ -162,9 +162,91 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
     height: 50px;
     -webkit-transform: translateX(-50%) rotate(45deg);
     transform: translateX(-50%) rotate(45deg);
-    bottom: -25px;
+    bottom: -23px;
     z-index: 10;
     background: #065aad;
+}
+.fish-group{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.fish-group1{
+    position: absolute;
+    width: 70px;
+    z-index: 9;
+    top: 28px;
+    left: -160px;
+    animation: move1 10s linear 5s infinite;
+}
+@keyframes move1 {
+    0%   {left: -160px;}
+    100% {left: 100%;}
+}
+.fish-group2{
+    position: absolute;
+    width: 70px;
+    z-index: 9;
+    top: 0px;
+    left: -140px;
+    animation: move2 10s linear 5.2s infinite;
+}
+@keyframes move2 {
+    0%   {left: -140px;}
+    100% {left: 100%;}
+}
+.fish-group3{
+    position: absolute;
+    width: 70px;
+    z-index: 9;
+    top: 30px;
+    left: -120px;
+    animation: move3 10s linear 5.4s infinite;
+}
+@keyframes move3 {
+    0%   {left: -120px;}
+    100% {left: 100%;}
+}
+.fish-group4{
+    position: absolute;
+    width: 70px;
+    z-index: 9;
+    top: 2px;
+    left: -100px;
+    animation: move4 10s linear 5.6s infinite;
+}
+@keyframes move4 {
+    0%   {left: -100px;}
+    100% {left: 100%;}
+}
+.fish3{
+    position: absolute;
+    width: 40px;
+    z-index: 100;
+    top: 150px;
+    left: -100px;
+    animation: fishmove3 10s linear 7s infinite;
+}
+@keyframes fishmove3 {
+    0%   {left: -100px;}
+    100% {left: 100%;}
+}
+.fish2{
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    left: 0;
+    transform: rotate(0deg);
+    animation: jumping 5s linear 2s infinite;
+}
+@keyframes jumping {
+    0%   {bottom:0px;left: 0;}
+    25%  {bottom:150px;left: 50px;transform: rotate(0deg);}
+    50%  {bottom:250px;left: 100px;transform: rotate(80deg);}
+    75%  {bottom:150px;left: 150px;transform: rotate(80deg);}
+    100% {bottom:0px;left: 200px;transform: rotate(80deg);}
 }
 .waves {
     position: relative;
@@ -497,6 +579,28 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
 }
 .field > svg {
     fill: #74da0c;
+}
+#cow {
+    position: absolute;
+    top: 70px;
+    width: 60px;
+    height: 60px;
+    right: 49%;
+    z-index: 1;
+}
+#grass {
+    position: absolute;
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    right: 44%;
+}
+#giraffe {
+    position: absolute;
+    top: -24px;
+    width: 100px;
+    height: 100px;
+    right: 53%;
 }
 .tree {
     position: absolute;

@@ -1,9 +1,9 @@
 import {socialLinks, metaTags, siteContent} from './constants.js';
-import {createClouds, createColorsForCareer, timerToChangeScenery, createMetaTag, gotoPageSection, setSiteContent, svgHtmlInsertUsingId, openSocialNetworkPage} from './utils.js'; 
+import {createClouds, createColorsForCareer, createMetaTag, gotoPageSection, setSiteContent, svgHtmlInsertUsingId, openSocialNetworkPage} from './utils.js'; 
+import {timerFunc} from './timer.js';
 
 createClouds();
 createColorsForCareer();
-setInterval(timerToChangeScenery(),3000);
 
 // set meta keys
 let metaKeys = Object.keys(metaTags);
@@ -38,4 +38,16 @@ document.getElementById('sitemenu').addEventListener('click',function(e) {
     }
 });
 
+// get current time using timer to change scenery
+if (typeof(Worker) !== "undefined") {
+    let myWorker = new Worker(timerFunc);
+    let count = 0;
+    setInterval(() => {
+        count = count + 1;
+        myWorker.postMessage({ action: "double", payload: count });
+        myWorker.onmessage = (event) => {console.log(event)};
+    },3000);
+} else {
+        console.log("Sorry! No Web Worker support.");
+}
 

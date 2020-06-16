@@ -19,19 +19,6 @@ function createColorsForCareer() {
     });
 }
 
-// get current time using timer to change scenery
-function timerToChangeScenery() {
-    let d = new Date();
-    let timer;
-    let hours = d.getHours();
-    if (hours >= 18) {
-        console.log('Evening');
-        window.clearTimeout(timer);
-    } else {
-        console.log('Morning');
-    }
-}
-
 function createMetaTag(attrName, attrContent) {
     var meta = document.createElement('meta');
     meta.setAttribute(attrName, attrContent);
@@ -86,4 +73,4 @@ function openSocialNetworkPage(socialpage, link){
     }
 }
 
-export {createClouds, createColorsForCareer, timerToChangeScenery, createMetaTag, gotoPageSection, setSiteContent, svgHtmlInsertUsingId, openSocialNetworkPage}
+export {createClouds, createColorsForCareer, createMetaTag, gotoPageSection, setSiteContent, svgHtmlInsertUsingId, openSocialNetworkPage}
