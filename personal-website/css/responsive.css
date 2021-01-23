@@ -1,0 +1,412 @@
+@media only screen and (max-width:1600px) {
+    @keyframes boatmove {
+        0% {
+            top: 56%;
+        }
+
+        50% {
+            top: 60%;
+        }
+
+        100% {
+            top: 56%;
+        }
+    }
+
+    @-webkit-keyframes boatmove {
+        0% {
+            top: 56%;
+        }
+
+        50% {
+            top: 60%;
+        }
+
+        100% {
+            top: 56%;
+        }
+    }
+
+    @-moz-keyframes boatmove {
+        0% {
+            top: 56%;
+        }
+
+        50% {
+            top: 60%;
+        }
+
+        100% {
+            top: 56%;
+        }
+    }
+
+    @-ms-keyframes boatmove {
+        0% {
+            top: 56%;
+        }
+
+        50% {
+            top: 60%;
+        }
+
+        100% {
+            top: 56%;
+        }
+    }
+
+    @-o-keyframes boatmove {
+        0% {
+            top: 56%;
+        }
+
+        50% {
+            top: 60%;
+        }
+
+        100% {
+            top: 56%;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:1200px) {
+    .home:after {
+        bottom: 27px;
+    }
+
+    .fish2 {
+        bottom: 80px;
+    }
+
+    @keyframes jumping {
+        0% {
+            bottom: 80px;
+            left: 0;
+        }
+
+        25% {
+            bottom: 180px;
+            left: 50px;
+            transform: rotate(0deg);
+        }
+
+        50% {
+            bottom: 300px;
+            left: 100px;
+            transform: rotate(80deg);
+        }
+
+        75% {
+            bottom: 180px;
+            left: 150px;
+            transform: rotate(80deg);
+        }
+
+        100% {
+            bottom: 80px;
+            left: 200px;
+            transform: rotate(80deg);
+        }
+    }
+
+    .aboutme .container {
+        padding: 0 0 35px 0;
+    }
+
+    .field {
+        top: -140px;
+        width: 65%;
+        height: 145%;
+    }
+
+    @keyframes boatmove {
+        0% {
+            top: 54%;
+        }
+
+        50% {
+            top: 58%;
+        }
+
+        100% {
+            top: 54%;
+        }
+    }
+
+    @-webkit-keyframes boatmove {
+        0% {
+            top: 54%;
+        }
+
+        50% {
+            top: 58%;
+        }
+
+        100% {
+            top: 54%;
+        }
+    }
+
+    @-moz-keyframes boatmove {
+        0% {
+            top: 54%;
+        }
+
+        50% {
+            top: 58%;
+        }
+
+        100% {
+            top: 54%;
+        }
+    }
+
+    @-ms-keyframes boatmove {
+        0% {
+            top: 54%;
+        }
+
+        50% {
+            top: 58%;
+        }
+
+        100% {
+            top: 54%;
+        }
+    }
+
+    @-o-keyframes boatmove {
+        0% {
+            top: 54%;
+        }
+
+        50% {
+            top: 58%;
+        }
+
+        100% {
+            top: 54%;
+        }
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .aboutme .container {
+        padding: 0 15px 35px 15px;
+    }
+
+    .field {
+        right: -23%;
+    }
+
+    .ballon {
+        right: 22%;
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .home:after {
+        bottom: 15px;
+    }
+
+    .boat {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    @keyframes boatmove {
+        0% {
+            top: 45%;
+        }
+
+        50% {
+            top: 46%;
+        }
+
+        100% {
+            top: 45%;
+        }
+    }
+
+    @-webkit-keyframes boatmove {
+        0% {
+            top: 45%;
+        }
+
+        50% {
+            top: 46%;
+        }
+
+        100% {
+            top: 45%;
+        }
+    }
+
+    @-moz-keyframes boatmove {
+        0% {
+            top: 45%;
+        }
+
+        50% {
+            top: 46%;
+        }
+
+        100% {
+            top: 45%;
+        }
+    }
+
+    @-ms-keyframes boatmove {
+        0% {
+            top: 45%;
+        }
+
+        50% {
+            top: 46%;
+        }
+
+        100% {
+            top: 45%;
+        }
+    }
+
+    @-o-keyframes boatmove {
+        0% {
+            top: 45%;
+        }
+
+        50% {
+            top: 46%;
+        }
+
+        100% {
+            top: 45%;
+        }
+    }
+
+    .field {
+        height: 110%;
+    }
+
+    .aboutme .container {
+        padding-top: 30px;
+    }
+
+    .career .career-container {
+        flex-direction: column;
+    }
+
+    .career-image,
+    .technology-tree {
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width:680px) {
+    .home:after {
+        bottom: 40px;
+    }
+
+    .boat {
+        width: 100px;
+        left: 32%;
+    }
+
+    @keyframes boatmove {
+        0% {
+            top: 55%;
+        }
+
+        50% {
+            top: 56%;
+        }
+
+        100% {
+            top: 55%;
+        }
+    }
+
+    @-webkit-keyframes boatmove {
+        0% {
+            top: 55%;
+        }
+
+        50% {
+            top: 56%;
+        }
+
+        100% {
+            top: 55%;
+        }
+    }
+
+    @-moz-keyframes boatmove {
+        0% {
+            top: 55%;
+        }
+
+        50% {
+            top: 56%;
+        }
+
+        100% {
+            top: 55%;
+        }
+    }
+
+    @-ms-keyframes boatmove {
+        0% {
+            top: 55%;
+        }
+
+        50% {
+            top: 56%;
+        }
+
+        100% {
+            top: 55%;
+        }
+    }
+
+    @-o-keyframes boatmove {
+        0% {
+            top: 55%;
+        }
+
+        50% {
+            top: 56%;
+        }
+
+        100% {
+            top: 55%;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:480px) {
+    .home:after {
+        bottom: 55px;
+    }
+
+    .bottom {
+        height: 150px;
+    }
+
+    .waves:after {
+        height: 50px;
+        bottom: -4px;
+    }
+
+    .aboutme .container {
+        padding-top: 0;
+    }
+}
