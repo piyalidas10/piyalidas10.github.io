@@ -844,6 +844,7 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
   }
 .contact {
     background: #6aac30;
+    position: relative;
 }
 .contact .container {
     margin: 0 auto;
@@ -860,4 +861,32 @@ svg#menuwrapper > g#contact > ellipse:nth-child(3), ellipse:nth-child(4)  {
 .socialntw {
     cursor: pointer;
 }
-
+.road{
+    position: relative;
+}
+.infiniteBlock{
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 50%;
+}
+.infiniteBlock::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(90deg, #fff 0%, #fff 70%, transparent 70%, transparent 100%);
+    background-size: 8%;
+    animation: roadanimate 0.3s linear infinite;
+}
+@keyframes roadanimate{
+    0% {
+        background-position: -8%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
